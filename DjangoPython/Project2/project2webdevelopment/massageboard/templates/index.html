@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link href="{% static 'stylees.css' %}" rel="stylesheet">
+        
+        
+    </head>
+  <body class="bodyy">
+    <h1>MESSAGE BOARD</h1>
+        
+    <a id="btn2" href="add/"><b>ADD NEW MESSAGE</b></a>
+        
+      {% for x in informatio %}
+      <div class="divv">
+        
+        <p class="pg">{{ x.messagee }} <br>
+          <i>
+          {{ x.username }}<br>
+          {{dayyy}}/{{monthhh}}/{{yearrr}}</i>
+        </p>
+        
+       
+      </div>
+      {% endfor %}
+    
+
+    
+  </body>
+</html>
